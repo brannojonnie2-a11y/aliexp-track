@@ -12,6 +12,20 @@ dist
 dist-ssr
 *.local
 
+# Next.js
+.next
+out
+.swc
+.turbo
+
+# Testing
+coverage
+.nyc_output
+
+# misc
+.env.local
+.env.*.local
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
