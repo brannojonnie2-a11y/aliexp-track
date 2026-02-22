@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { TranslationProvider } from './TranslationContext'
 
 export const metadata: Metadata = {
   title: 'AliExpress Login',
@@ -19,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#f5f5f5] text-[#191919]">{children}</body>
+      <body className="bg-[#f5f5f5] text-[#191919]">
+        <TranslationProvider>{children}</TranslationProvider>
+      </body>
     </html>
   )
 }
