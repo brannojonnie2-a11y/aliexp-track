@@ -1,6 +1,6 @@
 'use client'
 
-import { AdminPanel } from '@/app/components/AdminPanel'
+import { AdminPanel } from '../components/AdminPanel'
 import { useRouter } from 'next/navigation'
 
 export default function AdminPage() {
